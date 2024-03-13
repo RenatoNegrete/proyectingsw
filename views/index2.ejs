@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../estilos/style.css">
+    <title>Registrar Emprendimiento</title>
+
+</head>
+<body>
+    <div class="form-information-reg empReg">
+        <div class="form-information-childs">
+            <input class="btnVolver" type="button" value="<">
+            <h2>Registrar emprendimiento</h2>
+            <p>Ingresa los datos de tu emprendimiento</p>
+            <form action="/regEmp" method="post" enctype="multipart/form-data" class="form">
+                <label>
+                    <i class='bx bx-briefcase' ></i>
+                    <input type="text" name="nombreEmp" placeholder="Nombre Del Emprendimiento" required>
+                </label>
+                <label>
+                    <textarea id="textArea" name="descEmp" placeholder="Descripción del emprendimiento" required></textarea>
+                </label>
+                <label>
+                    <i class='bx bx-link' ></i>
+                    <input type="text" name="link" placeholder="Link de la página del emprendimiento" required>
+                </label>
+                <label>
+                    <i class='bx bx-spreadsheet' ></i>
+                    <p id="pCatalogo">Catalogo de Productos</p>
+                    <input type="file" name="catalogo" accept="application/pdf" required>
+                </label>
+                <label>
+                    <i class='bx bx-image-alt' ></i>
+                    <p id="pLogo">Logo del Emprendimiento</p>
+                    <input type="file" name="logo" accept="image/*" required>
+                </label>
+                <input type="submit" value="Registrar Emprendimiento" id="regisEmp">
+            </form>
+        </div>
+    </div>
+    <div class="form-information-confirm confirm hide">
+        <div class="form-information-reg">
+            <div class="form-information-childs">
+                <h2>¡Solicitud de Registro Enviada!</h2>
+                <p>Te enviaremos un correo muy pronto con nuestra respuesta.</p>
+                <form class="form">
+                    <input class="btnVolver" type="button" value="Volver al inicio">
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 EmprendeNow. All rights reserved.</p>
+    </footer>
+    <script src="../js/script2.js"></script>
+
+</body>
+</html>

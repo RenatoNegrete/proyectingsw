@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../background.png);
+    background-size: cover;
+}
+
+.contanier-form {
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
+    height: 500px;
+    max-width: 900px;
+    transition: all 1s ease;
+    margin: 10px;
+}
+.information {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(255, 255, 94);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.info-childs {
+    width: 100%;
+    padding: 0 30px;
+}
+
+.info-childs h2 {
+    font-size: 2.5rem;
+}
+
+.info-childs p {
+    margin: 15px 0;
+    color: rgb(27, 27, 27);
+}
+
+.info-childs input {
+    background-color: transparent;
+    outline: none;
+    border: solid 2px rgb(206, 150, 255);
+    border-radius: 20px;
+    padding:  10px 20px;
+    color: rgb(206, 150, 255);
+    cursor: pointer;
+    transition: background-color .3 ease;
+}
+
+.info-childs input:hover {
+    background-color: rgb(206, 150, 255);
+    border: none;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.form-information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+    background-color: rgb(136, 180, 255);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.btnVolver {
+    display: flex;
+    background-color:  rgb(206, 150, 255);
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.btnVolver:hover {
+    background-color: rgb(196, 128, 255);
+}
+.form-information-reg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+    background-color: rgb(136, 180, 255);
+    border-radius: 20px;
+}
+
+.form-information-childs {
+    padding: 0 30px;
+}
+
+.form-information-childs h2{
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+}
+
+.form-information-childs p {
+    color: rgb(27, 27, 27);
+}
+#textArea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1000%;
+    text-align: center;
+}
+
+#pCatalogo {
+    font-size:medium;
+    color: rgb(145, 145, 161);
+}
+
+#pLogo {
+    font-size:medium;
+    color: rgb(145, 145, 161);
+}
+.icon {
+    margin: 15px 0;
+}
+
+.icon i {
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    margin: 0 10px;
+    color: rgb(255, 255, 255);
+    border: solid thin rgb(118, 166, 255);
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.icon i:hover{
+    background-color: rgb(206, 150, 255);
+    color: white;
+}
+
+.form {
+    margin: 30px 0 0 0;
+}
+
+.form label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 0 10px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.form label input {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: rgb(27, 27, 27);
+}
+
+.form label i {
+    color: rgb(27, 26, 26);
+}
+
+.form input[type="submit"] {
+    background-color:  rgb(206, 150, 255);
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.form input[type="submit"]:hover {
+    background-color: rgb(196, 128, 255);
+}
+
+.hide {
+    position: absolute;
+    transform: translateY(-400%);
+}
+
+.confirm {
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+}
+
+.form-information-confirm .form-information-childs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-information-confirm .form-information-childs .btnVolver {
+    margin-top: 20px; /* Ajusta el espacio entre el texto y el botón */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-size: smaller;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+.headerDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header {
+    color: rgb(23, 23, 57);
+    border-radius: 10px;
+    /*background-color: rgb(118, 166, 255); */
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    max-width: 70%; /* Utiliza max-width en lugar de width */
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+.form-emprendimientos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+    background-color: rgb(136, 180, 255);
+    border-radius: 20px;
+}

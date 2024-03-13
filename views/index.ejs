@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../estilos/style.css">
+    <title>Registro e Inicio de sesión</title>
+</head>
+<body>
+    <div class="headerDiv">
+        <header>
+            <p>EmprendeNow</p>
+        </header>
+    </div>
+    <div class="contanier-form register">
+        <div class="information">
+            <div class="info-childs">
+                <h2>Bienvenido</h2>
+                <p>Para unirte a nuestra comunidad por favor inicia sesión con tus datos</p>
+                <input type="button" value="Iniciar sesión" id="sign-in">
+            </div>
+        </div>  
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Crear una Cuenta</h2>
+                <div class="icon">
+                    <i class='bx bxl-google'></i>
+                </div>
+                <p>o usa tu email para registrarte</p>
+                <form action="/validar" method="post" class="form">
+                    <label >
+                        <i class='bx bxs-user'></i>
+                        <input type="text" placeholder="Nombre Completo" name="nombre" id="nombre">
+                    </label>
+                    <label >
+                        <i class='bx bxs-envelope' ></i>
+                        <input type="email" placeholder="Correo Electronico" name="correo" id="correo">
+                    </label>
+                    <label >
+                        <i class='bx bxs-lock' ></i>
+                        <input type="password" placeholder="Contraseña" name="contra" id="contra">
+                    </label>
+                    <label>
+                        <i class='bx bxs-group'></i> 
+                        <select name="tipoUsuario" id="tipoUsuario">
+                            <option value="" disabled selected>Tipo de usuario</option>
+                            <option value="cliente">Cliente</option>
+                            <option value="emprendedor">Emprendedor</option>
+                        </select>
+                    </label>
+                    <input type="submit" value="Registrarse" id="registro">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="contanier-form login hide">
+        <div class="information">
+            <div class="info-childs">
+                <h2>Bienvenido Nuevamente</h2>
+                <p>Para unirte a nuestra comunidad por favor inicia sesión con tus datos</p>
+                <input type="button" value="Registrarse" id="sign-up">
+            </div>
+        </div>
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Iniciar Sesión</h2>
+                <div class="icon">
+                    <i class='bx bxl-google'></i>
+                </div>
+                <p>O Iniciar Sesión con una cuenta</p>
+                <form action="/ingresar" method="post" class="form">
+                    <label >
+                        <i class='bx bxs-envelope' ></i>
+                        <input type="email" placeholder="Correo Electronico" name="email" id="email">
+                    </label>
+                    <label >
+                        <i class='bx bxs-lock' ></i>
+                        <input type="password" placeholder="Contraseña" name="contrasenia" id="contrasenia">
+                    </label>
+                    <input type="submit" value="Iniciar Sesión" id="inicioSesion">
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 EmprendeNow. All rights reserved.</p>
+    </footer>
+    <script src="../js/script.js" type="module"></script>
+</body>
+</html> 

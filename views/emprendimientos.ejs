@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../estilos/style3.css">
+    <title>Emprendimientos</title>
+</head>
+<body>
+    <div class="form-emprendimientos">
+        <form class="form">
+            <h1>Lista de Emprendimientos Candidatos</h1>
+            <ul>
+                <% emprendimientos.forEach(function(emprendimiento) { %>
+                <li>
+                    <h3>Logo</h3>
+                    <img src="/logo/<%= emprendimiento.Id_emprendimiento %>" alt="Logo del emprendimiento" class="img-emprendimiento">
+                    <h2><%= emprendimiento.nombre %></h2>
+                    <p><%= emprendimiento.descripcion %></p>
+                    <p><%= emprendimiento.link %></p>
+                    <!-- Enlace para aceptar el emprendimiento -->
+                    <a href="#" class="aceptar" data-id="<%= emprendimiento.Id_emprendimiento %>">Aceptar</a>
+                    <a href="#" class="rechazar" data-id="<%= emprendimiento.Id_emprendimiento %>">Rechazar</a>
+                </li>
+                <% }); %>
+            </ul>
+        </form>  
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/script3.js"></script> <!-- Agrega tu script3.js aquí -->
+</body>
+</html>
